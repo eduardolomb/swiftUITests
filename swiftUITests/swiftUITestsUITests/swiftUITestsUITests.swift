@@ -9,7 +9,10 @@
 import XCTest
 
 class swiftUITestsUITests: XCTestCase {
-        
+    
+    
+    let app = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
         
@@ -29,6 +32,9 @@ class swiftUITestsUITests: XCTestCase {
     }
     
     func testExample() {
+        
+//        app.enterText("some random text", intoViewWithAccessibilityLabel: "my text field")
+        app.buttons["checkoutButton"]
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
